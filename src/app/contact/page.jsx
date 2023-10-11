@@ -1,7 +1,7 @@
 export default function Contact() {
-    return (
-      <div>
-        <p>Contact</p>
-      </div>
-    );
-  }
+  return (
+    <div className="hero min-h-screen bg-gradient-to-t from-base-200 from-0% via-primary via-50% to-base-200 to-100%">
+      <p>Contact</p>
+    </div>
+  );
+}

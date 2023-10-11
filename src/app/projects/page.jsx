@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-t from-base-200 from-0% via-primary via-50% to-base-200 to-100%">
       <div className="relative flex place-items-center">
         <div className="mb-32 grid gap-32 text-center  lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
           <a
@@ -140,6 +140,6 @@ export default function Projects() {
           </a>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

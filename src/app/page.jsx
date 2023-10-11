@@ -59,7 +59,7 @@ export default function Page() {
                   <p className="pl-2 text-lg text-neutral">
                     Hello and welcome to my portfolio! My name is Christian and I am a full-stack developer based in Nashville, Tennessee. I earned a Full-Stack Web Development certificate from the eDX program through Vanderbilt University.
                   </p>
-                  <button className="mt-6 btn btn-neutral">View More</button>
+                  <button className="mt-6 ml-2 btn btn-neutral">View More</button>
                 </div>
               </div>
             </div>
