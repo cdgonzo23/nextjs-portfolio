@@ -4,22 +4,22 @@ export default function Footer() {
   return (
     <footer className="footer justify-around p-5 bg-base-200">
       <nav className="pr-3">
-        <header className="footer-title text-neutral">Portfolio</header>
+        <header className="mb-2 font-semibold uppercase text-neutral">Portfolio</header>
         <a href="/about" className="link link-hover text-neutral">
           About me
         </a>
-        <a href="/contact" className="link link-hover text-neutral">
-          Contact
-        </a>
         <a href="/projects" className="link link-hover text-neutral">
           Projects
+        </a>
+        <a href="/contact" className="link link-hover text-neutral">
+          Contact
         </a>
         <a href="/" className="link link-hover text-neutral">
           Home
         </a>
       </nav>
       <nav>
-        <header className="footer-title pl-3 text-neutral">Social</header>
+        <header className="mb-2 font-semibold uppercase md:pl-2 text-neutral">Social</header>
         <div className="flex items-center">
           <a href="https://github.com/cdgonzo23">
             <Image

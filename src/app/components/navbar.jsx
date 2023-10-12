@@ -4,7 +4,7 @@ export default function Navbar() {
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
-        <div className="w-full navbar bg-base-200">
+        <div className="w-full navbar bg-base-200 py-6 px-8">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -26,7 +26,7 @@ export default function Navbar() {
               </svg>
             </label>
           </div>
-          <div className="flex-1 flex-col pl-12 pr-2 mx-2 items-start">
+          <div className="flex-1 flex-col sm:pl-12 pr-2 mx-2 items-start">
             <h1 className="text-xl font-semibold text-neutral">Christian Gonzales</h1>
             <h3 className="text-neutral">Full Stack Web Developer</h3>
           </div>
@@ -58,7 +58,7 @@ export default function Navbar() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200">
+        <ul className="menu p-4 w-40 min-h-full bg-base-200">
           {/* Sidebar content here */}
           <li>
             <a className="text-neutral" href="/">Home</a>

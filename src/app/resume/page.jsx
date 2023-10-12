@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
-import { Document, Page, pdfjs } from "react-pdf";
+import React from "react";
+import { pdfjs, Document, Page } from "react-pdf";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
@@ -32,14 +32,18 @@ export default function Resume() {
   return (
     <div className="hero min-h-screen bg-gradient-to-t from-base-200 from-0% via-primary via-50% to-base-200 to-100%">
       <div className="my-24">
-        <button className="link link-hover" onClick={onButtonClick}>Download PDF</button>
-        <Document
-          className="p-3 bg-neutral rounded-box"
-          file="/Gonzales_Resume.pdf"
-          loading={pdfLoader}
-        >
-          <Page pageNumber={1} />
-        </Document>
+        <button className="link link-hover" onClick={onButtonClick}>
+          Download PDF
+        </button>
+        <div className="block">
+          <Document
+            className="p-3 bg-neutral rounded-box shadow shadow-secondary"
+            file="/Gonzales_Resume.pdf"
+            loading={pdfLoader}
+          >
+            <Page pageNumber={1} />
+          </Document>
+        </div>
       </div>
     </div>
   );
