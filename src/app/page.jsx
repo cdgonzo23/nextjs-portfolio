@@ -65,6 +65,12 @@ export default function Page() {
               GitHub
             </div>
           </div>
+          <a
+              href="/resume"
+              className="flex justify-center md:justify-end mb-3 mr-8"
+            >
+              <button className="btn btn-neutral text-base-200">View My Resume</button>
+            </a>
         </div>
       </div>
       <div className="min-h-screen flex justify-center bg-gradient-to-t from-base-200 to-primary">
@@ -86,12 +92,19 @@ export default function Page() {
                 Hello and welcome to my portfolio! My name is Christian and I am
                 a full-stack developer based in Nashville, Tennessee. I earned a
                 Full-Stack Web Development certificate from the eDX program
-                through Vanderbilt University. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos id voluptas dolorem corrupti praesentium amet quia, totam doloremque nam placeat, at consectetur, nihil tempore voluptatum quidem! Maiores expedita ducimus culpa!
+                through Vanderbilt University. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Dignissimos id voluptas dolorem
+                corrupti praesentium amet quia, totam doloremque nam placeat, at
+                consectetur, nihil tempore voluptatum quidem! Maiores expedita
+                ducimus culpa!
               </p>
             </div>
-              <a href="/about" className="flex justify-center md:justify-end mb-3 mr-8">
-                <button className="btn btn-neutral">View More</button>
-              </a>
+            <a
+              href="/about"
+              className="flex justify-center md:justify-end mb-3 mr-8"
+            >
+              <button className="btn btn-neutral text-base-200">View More</button>
+            </a>
           </div>
         </div>
       </div>
