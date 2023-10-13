@@ -34,19 +34,19 @@ export default function Navbar() {
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
               <li>
-                <a className="text-neutral" href="/">Home</a>
+                <a className="text-neutral hover:bg-secondary" href="/">Home</a>
               </li>
               <li>
-                <a className="text-neutral" href="/projects">Projects</a>
+                <a className="text-neutral hover:bg-secondary" href="/projects">Projects</a>
               </li>
               <li>
-                <a className="text-neutral" href="/about">About Me</a>
+                <a className="text-neutral hover:bg-secondary" href="/about">About Me</a>
               </li>
               <li>
-                <a className="text-neutral" href="/contact">Contact</a>
+                <a className="text-neutral hover:bg-secondary" href="/contact">Contact</a>
               </li>
               <li>
-                <a className="text-neutral" href="/resume">Resume</a>
+                <a className="text-neutral hover:bg-secondary" href="/resume">Resume</a>
               </li>
             </ul>
           </div>
@@ -58,22 +58,22 @@ export default function Navbar() {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-40 min-h-full bg-base-200">
+        <ul className="menu p-4 md:w-80 min-h-full bg-base-200">
           {/* Sidebar content here */}
           <li>
-            <a className="text-neutral" href="/">Home</a>
+            <a className="text-neutral hover:bg-secondary" href="/">Home</a>
           </li>
           <li>
-            <a className="text-neutral" href="/projects">Projects</a>
+            <a className="text-neutral hover:bg-secondary" href="/projects">Projects</a>
           </li>
           <li>
-            <a className="text-neutral" href="/about">About Me</a>
+            <a className="text-neutral hover:bg-secondary" href="/about">About Me</a>
           </li>
           <li>
-            <a className="text-neutral" href="/contact">Contact</a>
+            <a className="text-neutral hover:bg-secondary" href="/contact">Contact</a>
           </li>
           <li>
-            <a className="text-neutral" href="/resume">Resume</a>
+            <a className="text-neutral hover:bg-secondary" href="/resume">Resume</a>
           </li>
         </ul>
       </div>

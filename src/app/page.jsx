@@ -12,10 +12,14 @@ export default function Page() {
               Developer from Nashville, Tennessee.
             </p>
             <a href="/projects">
-              <button className="btn btn-primary mx-2 text-base-200">My Projects</button>
+              <button className="btn btn-primary mx-2 text-base-200">
+                My Projects
+              </button>
             </a>
             <a href="/contact">
-              <button className="btn btn-neutral mx-2 text-base-200">Contact Me</button>
+              <button className="btn btn-neutral mx-2 text-base-200">
+                Contact Me
+              </button>
             </a>
           </div>
         </div>
@@ -24,45 +28,70 @@ export default function Page() {
         <div className="text-center flex flex-col justify-center items-center">
           <h2 className="text-4xl font-bold text-neutral">Skills</h2>
           <div className="grid md:grid-cols-4 grid-cols-2 gap-4 py-8">
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">JavaScript</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">React.js</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">HTML</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">CSS</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">SQL</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">Node.js</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">Express.js</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">REST API&apos;s</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">MongoDB</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">Next.js</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">VS Code</div>
-            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">GitHub</div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              JavaScript
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              React.js
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              HTML
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              CSS
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              SQL
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              Node.js
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              Express.js
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              REST API&apos;s
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              MongoDB
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              Next.js
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              VS Code
+            </div>
+            <div className="block px-4 py-2 rounded-box h-11 chat-bubble-secondary w-32 text-neutral">
+              GitHub
+            </div>
           </div>
         </div>
       </div>
-      <div>
-        <div className="min-h-screen flex justify-center bg-gradient-to-t from-base-200 to-primary">
-          <div className="w-2/3">
-            <h2 className="text-4xl text-neutral font-bold pb-2">This Is Me!</h2>
-            <div className="hero bg-secondary rounded-box">
-              <div className="p-6 md:flex-row">
-                <div className="avatar" style={{ position: 'inherit'}}>
-                  <div className="w-48 rounded-full ring ring-seconday-focus ring-offset-base-100 ring-offset-2">
-                    <Image
-                      src="/selfie.png"
-                      alt="selfie"
-                      width="100"
-                      height="100"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <p className="pl-2 text-lg text-neutral">
-                    Hello and welcome to my portfolio! My name is Christian and I am a full-stack developer based in Nashville, Tennessee. I earned a Full-Stack Web Development certificate from the eDX program through Vanderbilt University.
-                  </p>
-                  <button className="mt-6 ml-2 btn btn-neutral">View More</button>
+      <div className="min-h-screen flex justify-center bg-gradient-to-t from-base-200 to-primary">
+        <div className="lg:w-1/2 w-3/4">
+          <h2 className="text-4xl text-neutral font-bold pb-2">This Is Me!</h2>
+          <div className="bg-secondary rounded-box border-solid border-neutral border-2 shadow shadow-neutral">
+            <div className="p-6 flex flex-col md:flex-row items-start justify-center">
+              <div className="avatar" style={{ position: "inherit" }}>
+                <div className="w-48 rounded-full ring ring-seconday-focus ring-offset-base-100 ring-offset-2">
+                  <Image
+                    src="/selfie.png"
+                    alt="selfie"
+                    width="100"
+                    height="100"
+                  />
                 </div>
               </div>
+              <p className="md:pl-8 pt-8 md:pt-0 text-lg text-neutral">
+                Hello and welcome to my portfolio! My name is Christian and I am
+                a full-stack developer based in Nashville, Tennessee. I earned a
+                Full-Stack Web Development certificate from the eDX program
+                through Vanderbilt University. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos id voluptas dolorem corrupti praesentium amet quia, totam doloremque nam placeat, at consectetur, nihil tempore voluptatum quidem! Maiores expedita ducimus culpa!
+              </p>
             </div>
+              <a href="/about" className="flex justify-center md:justify-end mb-3 mr-8">
+                <button className="btn btn-neutral">View More</button>
+              </a>
           </div>
         </div>
       </div>
