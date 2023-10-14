@@ -20,35 +20,53 @@ export default function Resume() {
   return (
     <div className="hero min-h-screen bg-gradient-to-t from-base-200 from-0% via-primary via-50% to-base-200 to-100%">
       <div className="my-24 flex flex-col items-center w-10/12 md:w-auto">
-        <h2 className="text-4xl font-bold text-neutral">Resume</h2>
+        <h2 className="text-4xl font-bold text-neutral pb-12">Resume</h2>
         {/* Education */}
         <div className="w-2/3">
           <div className="divider text-2xl font-bold text-neutral">
             Education
           </div>
-          <div className="">
-            <h3 className="text-xl font-bold text-neutral">
-              Vanderbilt University
-            </h3>
-            <p>Certificate in Full-Stack Web Development</p>
-            <p>Nashville, TN</p>
-            <p>October, 2023</p>
-            <h3 className="text-xl font-bold text-neutral">
-              Belmont University
-            </h3>
-            <p>B.S. in Audio Engineering Technology</p>
-            <p>Minor in Music Business</p>
-            <p>Nashville, TN</p>
-            <p>May, 2020</p>
-            <p>Organizations:</p>
-            <ul>
-              <li className="text-neutral list-disc">
-                Division I Mens Track and Field Team
-              </li>
-              <li className="text-neutral list-disc">
-                Audio Engineering Society
-              </li>
-            </ul>
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-xl font-bold text-neutral">
+                Vanderbilt University
+              </h3>
+              <p className="pl-8 italic">
+                Certificate in Full-Stack Web Development
+              </p>
+            </div>
+            <div>
+              <p className="font-medium">Nashville, TN</p>
+              <p className="italic">Graduation Date: Oct, 2023</p>
+            </div>
+          </div>
+          <div className="flex justify-between mt-4">
+            <div>
+              <h3 className="text-xl font-bold text-neutral">
+                Belmont University
+              </h3>
+              <p className="italic text-neutral pl-8">
+                B.S. in Audio Engineering Technology
+              </p>
+              <p className="italic text-neutral pl-8">
+                Minor in Music Business
+              </p>
+              <p className="text-neutral italic text-neytral pt-2 pl-8">
+                Organizations:
+              </p>
+              <ul className="pl-16">
+                <li className="list-disc italic text-neutral">
+                  DI Mens Track and Field Team
+                </li>
+                <li className="list-disc italic text-neutral">
+                  Audio Engineering Society
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="text-neutral font-medium">Nashville, TN</p>
+              <p className="italic text-neutral">Graduation date: May, 2020</p>
+            </div>
           </div>
         </div>
         {/* Work Experience */}
@@ -56,36 +74,73 @@ export default function Resume() {
           <div className="divider text-2xl font-bold text-neutral">
             Work Experience
           </div>
-          <div>
+          <div className="flex justify-between">
             <h3 className="text-xl font-bold text-neutral">
               Freelance Audio Engineer
             </h3>
-            <p>Nashville, TN</p>
-            <p>June 2020 - October 2023</p>
-            <ul>
-              <li className="text-neutral list-disc">Independently installed all of the cabling for Wildwood Recording studio. This involved designing the studio layout, gathering the required connector types and cable lengths, wiring of over 700 patch points and connectors, and testing of every connection.</li>
-              <li className="text-neutral list-disc">Assembled and tested over 30 Son of Kong guitar pedals for Midget Electronics. Required an intensive preparation process of color coordinating wires, cutting wires to length, and soldering circuit boards, switches, and connectors.</li>
-              <li className="text-neutral list-disc">Designed and built pre-amplifiers modeled after Neve 1272s. Required studying documentation of the original 1272 and implementing the same wiring and circuitry into a new piece of hardware.</li>
-              <li className="text-neutral list-disc">Modified Ampex 601 tape machines into tube pre-amplifiers. Studied documentation to understand the original design and how it can be changed to meet modern recording standards.</li>
-            </ul>
-            <h3 className="text-xl font-bold text-neutral">
-              Woodland Sound Studio
-            </h3>
-            <p>Nashville, TN</p>
-            <p>August 2020 - February 2023</p>
-            <ul>
-              <li className="text-neutral list-disc">Assisted in building a distribution box which takes the output of the master tape machine and distribute that signal to up to 6 other tape machines simultaneously. Syncs the transport controls so all machine start and stop recording at the same time.</li>
-              <li className="text-neutral list-disc">Communicated with the head technical engineer to understand the goal of projects and the steps necessary to achieve completion.</li>
-            </ul>
+            <div className="text-neutral">
+              <p className="font-medium">Nashville, TN</p>
+              <p className="italic">June 2020 - October 2023</p>
+            </div>
           </div>
+          <ul className="text-neutral pl-8 pt-2">
+            <li className="text-neutral list-disc">
+              Independently installed all of the cabling for Wildwood Recording
+              studio. This involved designing the studio layout, gathering the
+              required connector types and cable lengths, wiring of over 700
+              patch points and connectors, and testing of every connection.
+            </li>
+            <li className="text-neutral list-disc">
+              Assembled and tested over 30 Son of Kong guitar pedals for Midget
+              Electronics. Required an intensive preparation process of color
+              coordinating wires, cutting wires to length, and soldering circuit
+              boards, switches, and connectors.
+            </li>
+            <li className="text-neutral list-disc">
+              Designed and built pre-amplifiers modeled after Neve 1272s.
+              Required studying documentation of the original 1272 and
+              implementing the same wiring and circuitry into a new piece of
+              hardware.
+            </li>
+            <li className="text-neutral list-disc">
+              Modified Ampex 601 tape machines into tube pre-amplifiers. Studied
+              documentation to understand the original design and how it can be
+              changed to meet modern recording standards.
+            </li>
+          </ul>
+          <div className="text-neutral flex justify-between mt-3">
+            <h3 className="text-xl font-bold">Woodland Sound Studio</h3>
+            <div>
+              <p className="font-medium">Nashville, TN</p>
+              <p className="italic">August 2020 - February 2023</p>
+            </div>
+          </div>
+          <ul className="text-neutral pl-8 pt-2">
+            <li className="text-neutral list-disc">
+              Assisted in building a distribution box which takes the output of
+              the master tape machine and distribute that signal to up to 6
+              other tape machines simultaneously. Syncs the transport controls
+              so all machine start and stop recording at the same time.
+            </li>
+            <li className="text-neutral list-disc">
+              Communicated with the head technical engineer to understand the
+              goal of projects and the steps necessary to achieve completion.
+            </li>
+          </ul>
         </div>
         {/* In Class Experience */}
-        <div className="w-2/3">
+        <div className="w-2/3 mt-3">
           <div className="divider text-2xl font-bold text-neutral">
             In Class Experience
           </div>
-          <ul>
-            <li className="text-neutral list-disc">With a team, built a vehicle maintenance tracker. Where the user can log in or sign up, then post images, cost, type of maintenance, and upcoming maintenance. This app is built on JavaScript and Handlebars, and utilizes Node.js and Express routing. The information is stored via Sequelize.</li>
+          <ul className="text-neutral pl-8">
+            <li className="text-neutral list-disc">
+              With a team, built a vehicle maintenance tracker. Where the user
+              can log in or sign up, then post images, cost, type of
+              maintenance, and upcoming maintenance. This app is built on
+              JavaScript and Handlebars, and utilizes Node.js and Express
+              routing. The information is stored via Sequelize.
+            </li>
           </ul>
         </div>
         {/* Skills */}
@@ -163,12 +218,14 @@ export default function Resume() {
           </div>
 
           <div className="divider"></div>
-          <button
-            className="btn btn-neutral text-base-200"
-            onClick={onButtonClick}
-          >
-            Download PDF
-          </button>
+          <div className="flex justify-center mb-24">
+            <button
+              className="btn btn-neutral text-base-200"
+              onClick={onButtonClick}
+            >
+              Download PDF
+            </button>
+          </div>
         </div>
       </div>
     </div>
