@@ -34,11 +34,7 @@ export default function Projects() {
                     </a>
                     <div className="flex flex-col md:flex-row place-items-center">
                       <p className="hidden md:block mt-4 pr-12 text-md text-neutral">
-                        {project.description} Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Nesciunt, maiores modi
-                        beatae recusandae ad fugit earum, aut, porro doloribus
-                        officia iusto id suscipit temporibus impedit natus animi
-                        commodi dicta itaque.
+                        {project.description}
                       </p>
                       {project.src ? (
                         <a href={project.link} className="hover:scale-105 transition-all duration-300">
@@ -67,11 +63,7 @@ export default function Projects() {
                         </video>
                       )}
                       <p className="block md:hidden mt-4 mb-4 md:mb-0 md:pr-12 text-md text-neutral text-center md:text-left">
-                        {project.description} Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Nesciunt, maiores modi
-                        beatae recusandae ad fugit earum, aut, porro doloribus
-                        officia iusto id suscipit temporibus impedit natus animi
-                        commodi dicta itaque.
+                        {project.description}
                       </p>
                     </div>
                     <div className="flex md:flex-row flex-col justify-start items-center">
@@ -133,11 +125,7 @@ export default function Projects() {
                         </video>
                       )}
                       <p className="mt-4 mb-4 md:mb-0 md:pl-12 text-md text-neutral text-center md:text-left">
-                        {project.description} Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Nesciunt, maiores modi
-                        beatae recusandae ad fugit earum, aut, porro doloribus
-                        officia iusto id suscipit temporibus impedit natus animi
-                        commodi dicta itaque.
+                        {project.description}
                       </p>
                     </div>
                     <div className="flex md:flex-row flex-col justify-end items-center">

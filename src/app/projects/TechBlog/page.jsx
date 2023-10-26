@@ -1,12 +1,6 @@
 "use client";
-import React from "react";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
+import CaseStudy from "../../components/caseStudy";
 
 export default function TechBlog() {
-    return (
-        <div>
-            <h2>Tech Blog</h2>
-        </div>
-    )
+  return CaseStudy("Tech Blog");
 }

@@ -8,8 +8,9 @@ export default function Page() {
           <div className="max-w-md w-80 md:w-auto  bg-base-200 py-4 rounded-box">
             <h1 className="text-5xl font-bold text-neutral">Welcome!</h1>
             <p className="p-6 text-lg text-neutral">
-              Hello! My name is <span className="font-bold">Christian Gonzales</span> and I am a Full Stack Web
-              Developer from Nashville, Tennessee.
+              Hello! My name is{" "}
+              <span className="font-bold">Christian Gonzales</span> and I am a
+              Full Stack Web Developer from Nashville, Tennessee.
             </p>
             <a href="/projects">
               <button className="btn btn-primary mx-2 text-base-200">
@@ -66,11 +67,13 @@ export default function Page() {
             </div>
           </div>
           <a
-              href="/resume"
-              className="flex justify-center md:justify-end mb-3 mr-8"
-            >
-              <button className="btn btn-neutral text-base-200">View My Resume</button>
-            </a>
+            href="/resume"
+            className="flex justify-center md:justify-end mb-3 mr-8"
+          >
+            <button className="btn btn-neutral text-base-200">
+              View My Full Resume
+            </button>
+          </a>
         </div>
       </div>
       <div className="min-h-screen flex justify-center bg-gradient-to-t from-base-200 to-primary">
@@ -91,19 +94,20 @@ export default function Page() {
               <p className="md:pl-8 pt-8 md:pt-0 text-lg text-neutral">
                 Hello and welcome to my portfolio! My name is Christian and I am
                 a full-stack developer based in Nashville, Tennessee. I earned a
-                Full-Stack Web Development certificate from the eDX program
-                through Vanderbilt University. Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Dignissimos id voluptas dolorem
-                corrupti praesentium amet quia, totam doloremque nam placeat, at
-                consectetur, nihil tempore voluptatum quidem! Maiores expedita
-                ducimus culpa!
+                Full-Stack Web Development certificate from the edX program
+                through Vanderbilt University. With a keen eye for detail and a
+                passion for design, I develop websites with the ideal user
+                exerperience in mind. I have worked on projects using JavaScript, SQL,
+                React, MongoDB and I  built this portfolio with Nextjs!
               </p>
             </div>
             <a
               href="/about"
               className="flex justify-center md:justify-end mb-3 mr-8"
             >
-              <button className="btn btn-neutral text-base-200">View More</button>
+              <button className="btn btn-neutral text-base-200">
+                View More
+              </button>
             </a>
           </div>
         </div>

@@ -1,12 +1,6 @@
 "use client";
-import React from "react";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
+import CaseStudy from "../../components/caseStudy";
 
 export default function SocialNetworkAPI() {
-    return (
-        <div>
-            <h2>Social Network API</h2>
-        </div>
-    )
+  return CaseStudy("Social Network API");
 }

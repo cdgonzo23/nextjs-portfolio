@@ -27,26 +27,40 @@ export default function Navbar() {
             </label>
           </div>
           <div className="flex-1 flex-col sm:pl-12 pr-2 mx-2 items-start">
-            <h1 className="text-xl font-semibold text-neutral">Christian Gonzales</h1>
-            <h3 className="text-neutral">Full Stack Web Developer</h3>
+            <a href="/">
+              <h1 className="text-xl font-semibold text-neutral">
+                Christian Gonzales
+              </h1>
+              <h3 className="text-neutral">Full Stack Web Developer</h3>
+            </a>
           </div>
           <div className="flex-none hidden lg:block">
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
               <li>
-                <a className="text-neutral hover:bg-secondary" href="/">Home</a>
+                <a className="text-neutral hover:bg-secondary" href="/">
+                  Home
+                </a>
               </li>
               <li>
-                <a className="text-neutral hover:bg-secondary" href="/projects">Projects</a>
+                <a className="text-neutral hover:bg-secondary" href="/projects">
+                  Projects
+                </a>
               </li>
               <li>
-                <a className="text-neutral hover:bg-secondary" href="/about">About Me</a>
+                <a className="text-neutral hover:bg-secondary" href="/about">
+                  About Me
+                </a>
               </li>
               <li>
-                <a className="text-neutral hover:bg-secondary" href="/contact">Contact</a>
+                <a className="text-neutral hover:bg-secondary" href="/contact">
+                  Contact
+                </a>
               </li>
               <li>
-                <a className="text-neutral hover:bg-secondary" href="/resume">Resume</a>
+                <a className="text-neutral hover:bg-secondary" href="/resume">
+                  Resume
+                </a>
               </li>
             </ul>
           </div>
@@ -61,19 +75,29 @@ export default function Navbar() {
         <ul className="menu p-4 md:w-80 min-h-full bg-base-200">
           {/* Sidebar content here */}
           <li>
-            <a className="text-neutral hover:bg-secondary" href="/">Home</a>
+            <a className="text-neutral hover:bg-secondary" href="/">
+              Home
+            </a>
           </li>
           <li>
-            <a className="text-neutral hover:bg-secondary" href="/projects">Projects</a>
+            <a className="text-neutral hover:bg-secondary" href="/projects">
+              Projects
+            </a>
           </li>
           <li>
-            <a className="text-neutral hover:bg-secondary" href="/about">About Me</a>
+            <a className="text-neutral hover:bg-secondary" href="/about">
+              About Me
+            </a>
           </li>
           <li>
-            <a className="text-neutral hover:bg-secondary" href="/contact">Contact</a>
+            <a className="text-neutral hover:bg-secondary" href="/contact">
+              Contact
+            </a>
           </li>
           <li>
-            <a className="text-neutral hover:bg-secondary" href="/resume">Resume</a>
+            <a className="text-neutral hover:bg-secondary" href="/resume">
+              Resume
+            </a>
           </li>
         </ul>
       </div>

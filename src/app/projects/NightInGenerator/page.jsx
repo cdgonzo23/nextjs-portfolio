@@ -1,12 +1,6 @@
 "use client";
-import React from "react";
-import { useEffect, useRef } from "react";
-import Image from "next/image";
+import CaseStudy from "../../components/caseStudy";
 
 export default function NightInGenerator() {
-    return (
-        <div>
-            <h2>Night-In Generator</h2>
-        </div>
-    )
+  return CaseStudy("Night-In Generator");
 }
