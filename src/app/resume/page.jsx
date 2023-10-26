@@ -193,16 +193,16 @@ export default function Resume() {
             </div>
             <div className="text-center flex flex-col justify-center items-center">
               <div className="grid md:grid-cols-4 grid-cols-2 gap-4 py-8">
-                <div className="block px-2 py-2 rounded-box h-11 chat-bubble w-32 text-base-200">
+                <div className="block px-2 py-2 rounded-box h-11 bg-neutral w-32 text-base-200">
                   Songwriting
                 </div>
-                <div className="block px-4 py-2 rounded-box h-11 chat-bubble w-32 text-base-200">
+                <div className="block px-4 py-2 rounded-box h-11 bg-neutral w-32 text-base-200">
                   Reading
                 </div>
-                <div className="block px-4 py-2 rounded-box h-11 chat-bubble w-32 text-base-200">
+                <div className="block px-4 py-2 rounded-box h-11 bg-neutral w-32 text-base-200">
                   Surfing
                 </div>
-                <div className="block px-4 py-2 rounded-box h-11 chat-bubble w-32 text-base-200">
+                <div className="block px-4 py-2 rounded-box h-11 bg-neutral w-32 text-base-200">
                   C++
                 </div>
               </div>

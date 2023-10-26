@@ -8,7 +8,7 @@ export default function Page() {
           <div className="max-w-md w-80 md:w-auto  bg-base-200 py-4 rounded-box">
             <h1 className="text-5xl font-bold text-neutral">Welcome!</h1>
             <p className="p-6 text-lg text-neutral">
-              Hello! My name is Christian Gonzales and I am a Full Stack Web
+              Hello! My name is <span className="font-bold">Christian Gonzales</span> and I am a Full Stack Web
               Developer from Nashville, Tennessee.
             </p>
             <a href="/projects">

@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import projectArray from "../../utils/projectList";
-import GitHub from "../../../public/github.png";
 
 export default function Projects() {
   const videoRef = useRef();
@@ -17,7 +16,7 @@ export default function Projects() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-t from-base-200 from-0% via-primary via-50% to-base-200 to-100%">
       <div className="flex justify-center my-32">
-        <div className="flex flex-col md:max-w-5xl md:w-auto w-3/4 lg:text-left">
+        <div className="flex flex-col md:max-w-5xl md:w-11/12 lg:w-auto w-3/4 lg:text-left">
           {projectArray.map((project) => {
             return (
               <div key={project.id}>
@@ -77,7 +76,7 @@ export default function Projects() {
                     </div>
                     <div className="flex md:flex-row flex-col justify-start items-center">
                       <a
-                        href={`/projects/${project.title}`}
+                        href={`/projects/${project.caseStudy}`}
                         className="text-neutral text-sm link link-hover"
                       >
                         <button className="btn btn-secondary">
@@ -152,7 +151,7 @@ export default function Projects() {
                         ></Image>
                       </a>
                       <a
-                        href={`/projects/${project.title}`}
+                        href={`/projects/${project.caseStudy}`}
                         className="text-neutral text-sm link link-hover"
                       >
                         <button className="btn btn-secondary">

@@ -26,9 +26,9 @@ export default function Contact() {
       <form
         action="submit"
         onSubmit={handleSubmit}
-        className="flex flex-col mt-32 w-72 items-center"
+        className="flex flex-col mt-32 w-80 items-center"
       >
-        <p className="text-neutral mb-4">Contact Me</p>
+        <h2 className="text-4xl font-bold text-neutral pb-12">Contact Me</h2>
         <input
           type="text"
           placeholder="Name*"
