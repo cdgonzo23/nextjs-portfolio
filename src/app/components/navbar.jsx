@@ -35,31 +35,31 @@ export default function Navbar() {
             </a>
           </div>
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal">
+            <ul className="menu inline-flex flex-row flex-wrap text-sm leading-5 p-2 m-0 list-non">
               {/* Navbar menu content here */}
-              <li>
-                <a className="text-neutral hover:bg-secondary" href="/">
+              <li className="mx-2">
+                <a className="text-neutral hover:bg-inherit after:bg-neutral after:absolute after:h-1 after:w-0 after:bottom-0 after:left-4 hover:after:w-2/3 after:transition-all after:duration-300" href="/">
                   Home
                 </a>
               </li>
-              <li>
-                <a className="text-neutral hover:bg-secondary" href="/projects">
+              <li className="mx-2">
+                <a className="text-neutral hover:bg-inherit after:bg-neutral after:absolute after:h-1 after:w-0 after:bottom-0 after:left-4 hover:after:w-2/3 after:transition-all after:duration-300" href="/projects">
                   Projects
                 </a>
               </li>
-              <li>
-                <a className="text-neutral hover:bg-secondary" href="/about">
+              <li className="mx-2">
+                <a className="text-neutral hover:bg-inherit after:bg-neutral after:absolute after:h-1 after:w-0 after:bottom-0 after:left-4 hover:after:w-2/3 after:transition-all after:duration-300" href="/about">
                   About Me
                 </a>
               </li>
-              <li>
-                <a className="text-neutral hover:bg-secondary" href="/contact">
-                  Contact
+              <li className="mx-2">
+                <a className="text-neutral hover:bg-inherit after:bg-neutral after:absolute after:h-1 after:w-0 after:bottom-0 after:left-4 hover:after:w-2/3 after:transition-all after:duration-300" href="/resume">
+                  Resume
                 </a>
               </li>
-              <li>
-                <a className="text-neutral hover:bg-secondary" href="/resume">
-                  Resume
+              <li className="mx-2">
+                <a className="text-neutral w-40 border-2 justify-center border-current border-sm hover:bg-neutral hover:text-base-200" href="/contact">
+                  Contact
                 </a>
               </li>
             </ul>

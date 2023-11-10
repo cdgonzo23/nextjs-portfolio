@@ -143,7 +143,7 @@ export default function Projects() {
                         <p className="mt-4 mb-4 md:mb-0 md:pl-12 text-md text-neutral text-center md:text-left">
                           {project.description}
                         </p>
-                        <div className="text-center md:flex hidden flex-col py-8 items-center">
+                        <div className="text-center md:flex hidden flex-col py-8 px-2 items-center">
                           <h5 className="pb-4 font-semibold">
                             Technologies Used:
                           </h5>

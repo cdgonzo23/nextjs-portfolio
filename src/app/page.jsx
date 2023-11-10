@@ -5,7 +5,7 @@ export default function Page() {
     <>
       <div className="hero min-h-screen bg-gradient-to-t from-primary from-80% to-base-200 to-100%">
         <div className=" text-center">
-          <div className="max-w-md w-80 md:w-auto  bg-base-200 py-4 rounded-box">
+          <div className="max-w-md md:w-auto bg-base-200 py-4 rounded-box border-4 border-current border-sm">
             <h1 className="text-5xl font-bold text-neutral">Welcome!</h1>
             <p className="p-6 text-lg text-neutral">
               Hello! My name is{" "}

@@ -11,19 +11,32 @@ export default function CaseStudy(projectTitle) {
 
   const videoRef = useRef();
 
-  useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 2500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     videoRef.current.play();
+  //   }, 2500);
+  // }, []);
 
   return (
     <div className="min-h-screen flex justify-center bg-gradient-to-t from-base-200 via-primary to-base-200">
-      <div className="lg:w-1/2 w-3/4 mt-32">
-        <h2 className="text-4xl text-neutral font-bold pb-2 text-center">
-          {projectInfo.title}
-        </h2>
-        <div className="p-6 flex flex-col md:flex-row items-start justify-center">
+      <div className="w-3/4 mt-32">
+        <div className="flex md:flex-row flex-col justify-start items-center">
+          <h2 className="text-4xl text-neutral font-bold pb-2 text-center">
+            {projectInfo.title}
+          </h2>
+          <div >
+            <a href={projectInfo.github}>
+              <Image
+                width="50"
+                height="50"
+                src="/github.png"
+                alt="github logo"
+                className="fill-current transition-all duration-150 ease-in-out hover:scale-105 mb-4"
+              ></Image>
+            </a>
+          </div>
+        </div>
+        <div className="py-6 flex flex-col md:flex-row">
           {projectInfo.src ? (
             <a
               href={projectInfo.link}
@@ -31,8 +44,8 @@ export default function CaseStudy(projectTitle) {
             >
               <Image
                 src={projectInfo.src}
-                width={1750}
-                height={1750}
+                width={1000}
+                height={1000}
                 alt="project image"
                 className="border-2 border-solid border-neutral rounded-box shadow shadow-neutral"
               />
@@ -53,9 +66,26 @@ export default function CaseStudy(projectTitle) {
               <source src={projectInfo.mp4} type="video/mp4" />
             </video>
           )}
-          <p className="md:pl-8 md:pt-0 text-lg text-neutral">
-            {projectInfo.description}
-          </p>
+          <div>
+            <p className="md:pl-8 md:pt-0 text-lg text-neutral">
+              {projectInfo.description}
+            </p>
+            <div className="text-center flex flex-col py-8 items-center">
+              <h5 className="pb-4 font-semibold">Technologies Used:</h5>
+              <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
+                {projectInfo.techUsed.map((tech) => {
+                  return (
+                    <div
+                      key={tech.techId}
+                      className="block px-4 py-2 rounded-box h-11 chat-bubble w-32 text-base-200"
+                    >
+                      {tech.name}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
