@@ -33,15 +33,37 @@ export default function Projects() {
                       </h2>
                     </a>
                     <div className="flex flex-col md:flex-row place-items-center">
-                      <p className="hidden md:block mt-4 pr-12 text-md text-neutral">
-                        {project.description}
-                      </p>
+                      <div className="hidden md:block ">
+                        <p className="mt-4 pr-12 text-md text-neutral">
+                          {project.description}
+                        </p>
+                        <div className="text-center flex flex-col py-8 items-center">
+                          <h5 className="pb-4 font-semibold">
+                            Technologies Used:
+                          </h5>
+                          <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
+                            {project.techUsed.map((tech) => {
+                              return (
+                                <div
+                                  key={tech.techId}
+                                  className="block px-4 py-2 rounded-box h-11 chat-bubble w-32 text-base-200"
+                                >
+                                  {tech.name}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
                       {project.src ? (
-                        <a href={project.link} className="hover:scale-105 transition-all duration-300">
+                        <a
+                          href={project.link}
+                          className="hover:scale-95 transition-all duration-300"
+                        >
                           <Image
                             src={project.src}
-                            width={1750}
-                            height={1750}
+                            width={1000}
+                            height={1000}
                             alt="project image"
                             className="border-2 border-solid border-neutral rounded-box shadow shadow-neutral"
                           />
@@ -49,26 +71,22 @@ export default function Projects() {
                       ) : (
                         <video
                           ref={videoRef}
-                          width="250"
                           loop
                           muted
-                          className="border-2 border-solid border-black rounded-xl md:w-1/3 w-full"
-                          style={{
-                            height: "50%",
-                            left: 0,
-                            top: 0,
-                          }}
+                          className="border-2 border-solid border-black rounded-xl md:w-1/2 w-full"
                         >
                           <source src={project.mp4} type="video/mp4" />
                         </video>
                       )}
-                      <p className="block md:hidden mt-4 mb-4 md:mb-0 md:pr-12 text-md text-neutral text-center md:text-left">
-                        {project.description}
-                      </p>
+                      <div>
+                        <p className="block md:hidden mt-4 mb-4 md:mb-0 md:pr-12 text-md text-neutral text-center md:text-left">
+                          {project.description}
+                        </p>
+                      </div>
                     </div>
                     <div className="flex md:flex-row flex-col justify-start items-center">
                       <a
-                        href={`/projects/${project.caseStudy}`}
+                        href={`/projects/${project.caseStudyLink}`}
                         className="text-neutral text-sm link link-hover"
                       >
                         <button className="btn btn-secondary">
@@ -99,34 +117,50 @@ export default function Projects() {
                     </a>
                     <div className="flex md:flex-row flex-col place-items-center">
                       {project.src ? (
-                        <a href={project.link} className="hover:scale-105 transition-all duration-300">
-                        <Image
-                          src={project.src}
-                          width={1750}
-                          height={1750}
-                          alt="project image"
-                          className="border-2 border-solid border-neutral rounded-box shadow shadow-neutral"
-                        />
-                      </a>
+                        <a
+                          href={project.link}
+                          className="hover:scale-95 transition-all duration-300"
+                        >
+                          <Image
+                            src={project.src}
+                            width={1000}
+                            height={1000}
+                            alt="project image"
+                            className="border-2 border-solid border-neutral rounded-box shadow shadow-neutral"
+                          />
+                        </a>
                       ) : (
                         <video
                           ref={videoRef}
-                          width="250"
                           loop
                           muted
-                          className="border-2 border-solid border-black rounded-xl md:w-1/3 w-full"
-                          style={{
-                            height: "50%",
-                            left: 0,
-                            top: 0,
-                          }}
+                          className="border-2 border-solid border-black rounded-xl md:w-1/2 w-max"
                         >
                           <source src={project.mp4} type="video/mp4" />
                         </video>
                       )}
-                      <p className="mt-4 mb-4 md:mb-0 md:pl-12 text-md text-neutral text-center md:text-left">
-                        {project.description}
-                      </p>
+                      <div>
+                        <p className="mt-4 mb-4 md:mb-0 md:pl-12 text-md text-neutral text-center md:text-left">
+                          {project.description}
+                        </p>
+                        <div className="text-center md:flex hidden flex-col py-8 items-center">
+                          <h5 className="pb-4 font-semibold">
+                            Technologies Used:
+                          </h5>
+                          <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
+                            {project.techUsed.map((tech) => {
+                              return (
+                                <div
+                                  key={tech.techId}
+                                  className="block px-4 py-2 rounded-box h-11 chat-bubble w-32 text-base-200"
+                                >
+                                  {tech.name}
+                                </div>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div className="flex md:flex-row flex-col justify-end items-center">
                       <a href={project.github}>
@@ -139,7 +173,7 @@ export default function Projects() {
                         ></Image>
                       </a>
                       <a
-                        href={`/projects/${project.caseStudy}`}
+                        href={`/projects/${project.caseStudyLink}`}
                         className="text-neutral text-sm link link-hover"
                       >
                         <button className="btn btn-secondary">
