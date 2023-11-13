@@ -4,24 +4,26 @@ export default function Page() {
   return (
     <>
       <div className="hero min-h-screen bg-gradient-to-t from-primary from-80% to-base-200 to-100%">
-        <div className=" text-center">
-          <div className="max-w-md md:w-auto bg-base-200 py-4 rounded-box border-4 border-current border-sm">
-            <h1 className="text-5xl font-bold text-neutral">Welcome!</h1>
-            <p className="p-6 text-lg text-neutral">
-              Hello! My name is{" "}
-              <span className="font-bold">Christian Gonzales</span> and I am a
-              Full Stack Web Developer from Nashville, Tennessee.
-            </p>
-            <a href="/projects">
-              <button className="btn btn-primary mx-2 text-base-200">
-                My Projects
-              </button>
-            </a>
-            <a href="/contact">
-              <button className="btn btn-neutral mx-2 text-base-200">
-                Contact Me
-              </button>
-            </a>
+        <div className="flex w-10/12 md:w-auto">
+          <div className="text-center">
+            <div className="max-w-md md:w-auto bg-base-200 py-4 rounded-box border-4 border-current border-sm">
+              <h1 className="text-5xl font-bold text-neutral">Welcome!</h1>
+              <p className="p-6 text-lg text-neutral">
+                Hello! My name is{" "}
+                <span className="font-bold">Christian Gonzales</span> and I am a
+                Full Stack Web Developer from Nashville, Tennessee.
+              </p>
+              <a href="/projects">
+                <button className="btn btn-primary mx-2 text-base-200">
+                  My Projects
+                </button>
+              </a>
+              <a href="/contact">
+                <button className="btn btn-neutral mx-2 text-base-200">
+                  Contact Me
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -68,7 +70,7 @@ export default function Page() {
           </div>
           <a
             href="/resume"
-            className="flex justify-center md:justify-end mb-3 mr-8"
+            className="flex justify-center md:justify-end mb-3"
           >
             <button className="btn btn-neutral text-base-200">
               View My Full Resume
@@ -77,10 +79,10 @@ export default function Page() {
         </div>
       </div>
       <div className="min-h-screen flex justify-center bg-gradient-to-t from-base-200 to-primary">
-        <div className="lg:w-1/2 w-3/4">
+        <div className="lg:w-1/2 w-10/12">
           <h2 className="text-4xl text-neutral font-bold pb-2">This Is Me!</h2>
           <div className="bg-secondary rounded-box border-solid border-neutral border-2 shadow shadow-neutral">
-            <div className="p-6 flex flex-col md:flex-row items-start justify-center">
+            <div className="p-6 flex flex-col md:flex-row items-center md:items-start text-center md:text-left justify-center">
               <div className="avatar" style={{ position: "inherit" }}>
                 <div className="w-48 rounded-full ring ring-seconday-focus ring-offset-base-100 ring-offset-2">
                   <Image
@@ -97,8 +99,9 @@ export default function Page() {
                 Full-Stack Web Development certificate from the edX program
                 through Vanderbilt University. With a keen eye for detail and a
                 passion for design, I develop websites with the ideal user
-                exerperience in mind. I have worked on projects using JavaScript, SQL,
-                React, MongoDB and I  built this portfolio with Nextjs!
+                exerperience in mind. I have worked on projects using
+                JavaScript, SQL, React, MongoDB and I built this portfolio with
+                Nextjs!
               </p>
             </div>
             <a

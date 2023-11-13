@@ -8,9 +8,7 @@ export default function Projects() {
   const videoRef = useRef();
 
   useEffect(() => {
-    setTimeout(() => {
-      videoRef.current.play();
-    }, 2500);
+    videoRef.current.play();
   }, []);
 
   return (
